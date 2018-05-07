@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  NewLine
+
+  Created by Li, Jonathan on 2018-05-07.
+  Copyright © 2018 Li, Jonathan. All rights reserved.
+*/
+"Description" = "该定制键盘只有一个换行键，以便用户在使用微信是可以换行。\n\n在使用该键盘前，请先到手机的设置->通用->键盘页面，选择“键盘”，然后选“添加新键盘”，然后添加第三方键盘“NewLine”。 \n\n删除本应用时也会同时删除所添加的键盘。";
+"Next Keyboard" = "选下一键盘";
+"New Line" = "新加一行";
