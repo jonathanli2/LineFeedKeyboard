@@ -24,6 +24,8 @@
 	<dict>
 		<key>NSExtensionAttributes</key>
 		<dict>
+			<key>PrimaryLanguage</key>
+			<string>en-US</string>
 			<key>IsASCIICapable</key>
 			<false/>
 			<key>PrefersRightToLeft</key>

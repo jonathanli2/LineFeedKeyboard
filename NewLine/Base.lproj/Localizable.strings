@@ -5,6 +5,6 @@
   Created by Li, Jonathan on 2018-05-07.
   Copyright © 2018 Li, Jonathan. All rights reserved.
 */
-"Description" = "This custom keyboard has only one \"New Line\" key for adding new lines in WeChat application, as WeChat replaces the \"Return\" key by a new \"Send\" key.\n\nIn order to use this custom keyboard, you need to go to Settings->General->Keyboard page, and then select \"Keyboard\" item, and then add THIRD-PARTY KEYBOARD \"LineFeed keyboard\".\n\nDelete this application from your device will also delete the LineFeed custom keyboard.";
+"Description" = "This custom keyboard has only one \"New Line\" key for adding new lines in WeChat application, as WeChat replaces the \"Return\" key by a new \"Send\" key.\n\nIn order to use this custom keyboard, you need to go to Settings->General->Keyboard page, and then select \"Keyboard\" item, and then add THIRD-PARTY KEYBOARD \"NewLine keyboard\".\n\nDelete this application from your device will also delete the LineFeed custom keyboard.";
 "Next Keyboard" = "Next Keyboard";
 "New Line" = "New Line";
