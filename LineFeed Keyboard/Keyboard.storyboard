@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8ol-UL-hYa">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Keyboard View Controller-->
+        <scene sceneID="rmQ-H7-DqI">
+            <objects>
+                <viewController id="8ol-UL-hYa" customClass="KeyboardViewController" customModule="LineFeed_Keyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ec4-Xy-Cc7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSl-ui-EdT">
+                                <rect key="frame" x="55" y="579" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="had-Sa-asF"/>
+                                    <constraint firstAttribute="width" constant="40" id="yCN-Ul-n8o"/>
+                                </constraints>
+                                <state key="normal" image="next"/>
+                                <connections>
+                                    <action selector="onNextKeyboard:" destination="8ol-UL-hYa" eventType="touchUpInside" id="AnP-wU-CEd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnl-S3-9Ul">
+                                <rect key="frame" x="279" y="584" width="46" height="30"/>
+                                <state key="normal" title="Return"/>
+                                <connections>
+                                    <action selector="onReturnPressed:" destination="8ol-UL-hYa" eventType="touchUpInside" id="UwH-jQ-nYu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="287-kK-VyW">
+                                <rect key="frame" x="135.5" y="577" width="44" height="44"/>
+                                <state key="normal" image="left"/>
+                                <connections>
+                                    <action selector="onDirectionLeft:" destination="8ol-UL-hYa" eventType="touchUpInside" id="c2x-Cl-2xf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cv9-k5-gJ1">
+                                <rect key="frame" x="195" y="577" width="44" height="44"/>
+                                <state key="normal" image="right"/>
+                                <connections>
+                                    <action selector="onDirectionRight:" destination="8ol-UL-hYa" eventType="touchUpInside" id="f9C-ed-uia"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="287-kK-VyW" firstAttribute="centerX" secondItem="ec4-Xy-Cc7" secondAttribute="centerX" constant="-30" id="Br8-RX-dLd"/>
+                            <constraint firstItem="287-kK-VyW" firstAttribute="centerY" secondItem="OSl-ui-EdT" secondAttribute="centerY" id="Dli-0m-2dL"/>
+                            <constraint firstItem="cv9-k5-gJ1" firstAttribute="centerY" secondItem="Bnl-S3-9Ul" secondAttribute="centerY" id="MKe-hJ-y7K"/>
+                            <constraint firstItem="Bnl-S3-9Ul" firstAttribute="centerY" secondItem="OSl-ui-EdT" secondAttribute="centerY" id="Ojp-QN-nAz"/>
+                            <constraint firstItem="cv9-k5-gJ1" firstAttribute="centerX" secondItem="ec4-Xy-Cc7" secondAttribute="centerX" constant="30" id="SND-4H-i4n"/>
+                            <constraint firstItem="OSl-ui-EdT" firstAttribute="leading" secondItem="Fb2-Jd-e9H" secondAttribute="leading" constant="55" id="Xpt-2r-53I"/>
+                            <constraint firstItem="Fb2-Jd-e9H" firstAttribute="bottom" secondItem="OSl-ui-EdT" secondAttribute="bottom" constant="48" id="aQh-NU-yxu"/>
+                            <constraint firstItem="Fb2-Jd-e9H" firstAttribute="trailing" secondItem="Bnl-S3-9Ul" secondAttribute="trailing" constant="50" id="kPb-tZ-ekH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fb2-Jd-e9H"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4zM-WQ-NiQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="-125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="left" width="44" height="44"/>
+        <image name="next" width="131" height="131"/>
+        <image name="right" width="44" height="44"/>
+    </resources>
+</document>
