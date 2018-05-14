@@ -27,48 +27,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wb5-yX-lcp">
-                                <rect key="frame" x="75.5" y="300" width="223" height="40"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nKL-T3-QWS">
-                                        <rect key="frame" x="0.0" y="0.0" width="223" height="40"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0ov-bk-glg">
-                                                <rect key="frame" x="0.0" y="0.0" width="223" height="40"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zjp-zq-pJa">
-                                                        <rect key="frame" x="0.0" y="0.0" width="223" height="40"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjF-pL-1Bj">
-                                                                <rect key="frame" x="0.0" y="0.0" width="223" height="40"/>
-                                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="cgD-eK-P8D"/>
-                                                                    <constraint firstAttribute="height" constant="40" id="kXW-Y2-9Pq"/>
-                                                                </constraints>
-                                                                <inset key="contentEdgeInsets" minX="18" minY="0.0" maxX="19" maxY="0.0"/>
-                                                                <state key="normal" title="Install Handy Keyboard"/>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0J-nQ-1ND">
+                                <rect key="frame" x="130" y="309" width="114" height="30"/>
+                                <state key="normal" title="Install Key Board"/>
+                                <connections>
+                                    <action selector="onInstallKeyboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QX4-gz-NbE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Wb5-yX-lcp" firstAttribute="centerX" secondItem="mqH-0c-ZhM" secondAttribute="centerX" id="7fh-bM-YiF"/>
-                            <constraint firstItem="zjF-pL-1Bj" firstAttribute="top" secondItem="mqH-0c-ZhM" secondAttribute="bottom" constant="28" id="9oA-Jz-J8N"/>
                             <constraint firstItem="mqH-0c-ZhM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="N8Y-zE-xx7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mqH-0c-ZhM" secondAttribute="trailing" constant="16" id="U3Q-Vr-exB"/>
                             <constraint firstItem="mqH-0c-ZhM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Yqc-Of-Vrk"/>
+                            <constraint firstItem="i0J-nQ-1ND" firstAttribute="top" secondItem="mqH-0c-ZhM" secondAttribute="bottom" constant="37" id="awA-BT-XWB"/>
+                            <constraint firstItem="i0J-nQ-1ND" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gF7-ga-cT2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="installKeyBoard" destination="i0J-nQ-1ND" id="jLz-gV-wwO"/>
                         <outlet property="txtView" destination="mqH-0c-ZhM" id="lxu-qA-sxL"/>
                     </connections>
                 </viewController>

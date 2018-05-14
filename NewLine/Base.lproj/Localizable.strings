@@ -5,6 +5,6 @@
   Created by Li, Jonathan on 2018-05-07.
   Copyright © 2018 Li, Jonathan. All rights reserved.
 */
-"Description" = "This custom keyboard has only one \"New Line\" key for adding new lines in WeChat application, as WeChat replaces the \"Return\" key by a new \"Send\" key.\n\nIn order to use this custom keyboard, you need to go to Settings->General->Keyboard page, and then select \"Keyboard\" item, and then add THIRD-PARTY KEYBOARD \"NewLine keyboard\".\n\nDelete this application from your device will also delete the LineFeed custom keyboard.";
-"Next Keyboard" = "Next Keyboard";
-"New Line" = "New Line";
+"Description" = "The Return key in this custom keyboard allows user to add new lines in the popular WeChat application. In addition, this soft keyboard also support keys of Cut, Copy, Paste, Left and Right direction keys.\n\nIn order to use this custom keyboard, you need to go to Settings->General->Keyboard page, and then select \"Keyboard\" item, and  add THIRD-PARTY KEYBOARD \"NewLine keyboard\". Then click on the new keyboard item, and enable 'Allow Full Access'.\n\nDelete this application from your iPhone will also delete the NewLine custom keyboard.";
+
+"installkeyboard" = "Open Settings App";

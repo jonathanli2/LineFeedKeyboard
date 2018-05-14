@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSl-ui-EdT">
-                                <rect key="frame" x="55" y="579" width="40" height="40"/>
+                                <rect key="frame" x="50" y="579" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="had-Sa-asF"/>
                                     <constraint firstAttribute="width" constant="40" id="yCN-Ul-n8o"/>
@@ -59,7 +59,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZU-GY-njU">
-                                <rect key="frame" x="55" y="501" width="40" height="40"/>
+                                <rect key="frame" x="50" y="501" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="DH8-BH-fWI"/>
                                     <constraint firstAttribute="height" constant="40" id="y1I-SW-Zmf"/>
@@ -98,13 +98,14 @@
                             <constraint firstItem="OSl-ui-EdT" firstAttribute="top" secondItem="DZU-GY-njU" secondAttribute="bottom" constant="38" id="8Zh-0d-JT0"/>
                             <constraint firstItem="287-kK-VyW" firstAttribute="centerX" secondItem="ec4-Xy-Cc7" secondAttribute="centerX" constant="-30" id="Br8-RX-dLd"/>
                             <constraint firstItem="287-kK-VyW" firstAttribute="centerY" secondItem="OSl-ui-EdT" secondAttribute="centerY" id="Dli-0m-2dL"/>
+                            <constraint firstItem="Bnl-S3-9Ul" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ec4-Xy-Cc7" secondAttribute="leading" constant="20" symbolic="YES" id="Gf3-mQ-cWt"/>
                             <constraint firstItem="cv9-k5-gJ1" firstAttribute="centerY" secondItem="Bnl-S3-9Ul" secondAttribute="centerY" id="MKe-hJ-y7K"/>
                             <constraint firstItem="Bnl-S3-9Ul" firstAttribute="centerY" secondItem="OSl-ui-EdT" secondAttribute="centerY" id="Ojp-QN-nAz"/>
                             <constraint firstItem="DZU-GY-njU" firstAttribute="leading" secondItem="OSl-ui-EdT" secondAttribute="leading" id="S6b-LL-mPI"/>
                             <constraint firstItem="cv9-k5-gJ1" firstAttribute="centerX" secondItem="ec4-Xy-Cc7" secondAttribute="centerX" constant="30" id="SND-4H-i4n"/>
                             <constraint firstItem="Leo-1U-DRN" firstAttribute="centerY" secondItem="7OS-1Y-PI6" secondAttribute="centerY" id="TcQ-KZ-iq1"/>
                             <constraint firstItem="Leo-1U-DRN" firstAttribute="leading" secondItem="cv9-k5-gJ1" secondAttribute="leading" id="Tp8-N1-rGy"/>
-                            <constraint firstItem="OSl-ui-EdT" firstAttribute="leading" secondItem="Fb2-Jd-e9H" secondAttribute="leading" constant="55" id="Xpt-2r-53I"/>
+                            <constraint firstItem="OSl-ui-EdT" firstAttribute="leading" secondItem="Fb2-Jd-e9H" secondAttribute="leading" constant="50" id="VEk-wt-r1j"/>
                             <constraint firstItem="7OS-1Y-PI6" firstAttribute="centerY" secondItem="DZU-GY-njU" secondAttribute="centerY" id="a4J-2c-1yl"/>
                             <constraint firstItem="Fb2-Jd-e9H" firstAttribute="bottom" secondItem="OSl-ui-EdT" secondAttribute="bottom" constant="48" id="aQh-NU-yxu"/>
                             <constraint firstItem="Fb2-Jd-e9H" firstAttribute="trailing" secondItem="Bnl-S3-9Ul" secondAttribute="trailing" constant="50" id="kPb-tZ-ekH"/>

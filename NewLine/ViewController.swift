@@ -12,11 +12,15 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var txtView: UITextView!
     
+    @IBOutlet weak var installKeyBoard: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         let description = NSLocalizedString("Description", comment: "Show keyboard description")
         txtView.text = description;
-        txtView.becomeFirstResponder();
+     //   txtView.becomeFirstResponder();
+        
+        let install = NSLocalizedString("installkeyboard", comment: "Install keyboard description")
+        installKeyBoard.setTitle(install, for: [])
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,5 +29,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func onInstallKeyboard(_ sender: Any) {
+           UIApplication.shared.open(URL(string:"App-Prefs:root=General&path=Keyboard/KEYBOARDS")!)
+    }
 }
 
