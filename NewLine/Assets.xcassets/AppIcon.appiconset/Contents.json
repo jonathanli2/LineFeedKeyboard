@@ -33,13 +33,13 @@
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "Themeboard-1.0-for-iOS-app-icon-full-size-5.png",
+      "filename" : "Themeboard-1.0-for-iOS-app-icon-full-size-5.jpg",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "Themeboard-1.0-for-iOS-app-icon-full-size-4.png",
+      "filename" : "Themeboard-1.0-for-iOS-app-icon-full-size-4.jpg",
       "scale" : "3x"
     },
     {
@@ -75,25 +75,25 @@
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "Themeboard-1.0-for-iOS-app-icon-full-size-3.png",
+      "filename" : "Themeboard-1.0-for-iOS-app-icon-full-size-76.jpg",
       "scale" : "1x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "Themeboard-1.0-for-iOS-app-icon-full-size-2.png",
+      "filename" : "Themeboard-1.0-for-iOS-app-icon-full-size-2.jpg",
       "scale" : "2x"
     },
     {
       "size" : "83.5x83.5",
       "idiom" : "ipad",
-      "filename" : "Themeboard-1.0-for-iOS-app-icon-full-size-1.png",
+      "filename" : "Themeboard-1.0-for-iOS-app-icon-full-size-1.jpg",
       "scale" : "2x"
     },
     {
       "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "filename" : "Themeboard-1.0-for-iOS-app-icon-full-size.png",
+      "filename" : "Themeboard-1.0-for-iOS-app-icon-full-size.jpg",
       "scale" : "1x"
     }
   ],
