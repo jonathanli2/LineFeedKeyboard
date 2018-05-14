@@ -37,28 +37,75 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="287-kK-VyW">
-                                <rect key="frame" x="135.5" y="577" width="44" height="44"/>
+                                <rect key="frame" x="137.5" y="579" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mlb-Wr-vuq"/>
+                                    <constraint firstAttribute="width" constant="40" id="oH1-HH-6n5"/>
+                                </constraints>
                                 <state key="normal" image="left"/>
                                 <connections>
                                     <action selector="onDirectionLeft:" destination="8ol-UL-hYa" eventType="touchUpInside" id="c2x-Cl-2xf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cv9-k5-gJ1">
-                                <rect key="frame" x="195" y="577" width="44" height="44"/>
+                                <rect key="frame" x="197" y="579" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="bQd-q9-Qzi"/>
+                                    <constraint firstAttribute="height" constant="40" id="h86-8M-ES3"/>
+                                </constraints>
                                 <state key="normal" image="right"/>
                                 <connections>
                                     <action selector="onDirectionRight:" destination="8ol-UL-hYa" eventType="touchUpInside" id="f9C-ed-uia"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZU-GY-njU">
+                                <rect key="frame" x="55" y="501" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="DH8-BH-fWI"/>
+                                    <constraint firstAttribute="height" constant="40" id="y1I-SW-Zmf"/>
+                                </constraints>
+                                <state key="normal" image="cut"/>
+                                <connections>
+                                    <action selector="onCut:" destination="8ol-UL-hYa" eventType="touchUpInside" id="5I2-nN-SJV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OS-1Y-PI6">
+                                <rect key="frame" x="137.5" y="501.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="REG-hA-fVV"/>
+                                    <constraint firstAttribute="width" constant="40" id="fpc-uJ-lSR"/>
+                                </constraints>
+                                <state key="normal" image="copy"/>
+                                <connections>
+                                    <action selector="onCopy:" destination="8ol-UL-hYa" eventType="touchUpInside" id="6Rq-If-dyN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Leo-1U-DRN">
+                                <rect key="frame" x="197" y="501.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="OKP-E9-bJm"/>
+                                    <constraint firstAttribute="height" constant="40" id="xIr-XZ-QyC"/>
+                                </constraints>
+                                <state key="normal" image="paste"/>
+                                <connections>
+                                    <action selector="onPaste:" destination="8ol-UL-hYa" eventType="touchUpInside" id="doZ-PT-K2x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="7OS-1Y-PI6" firstAttribute="leading" secondItem="287-kK-VyW" secondAttribute="leading" id="1lo-cz-l8e"/>
+                            <constraint firstItem="OSl-ui-EdT" firstAttribute="top" secondItem="DZU-GY-njU" secondAttribute="bottom" constant="38" id="8Zh-0d-JT0"/>
                             <constraint firstItem="287-kK-VyW" firstAttribute="centerX" secondItem="ec4-Xy-Cc7" secondAttribute="centerX" constant="-30" id="Br8-RX-dLd"/>
                             <constraint firstItem="287-kK-VyW" firstAttribute="centerY" secondItem="OSl-ui-EdT" secondAttribute="centerY" id="Dli-0m-2dL"/>
                             <constraint firstItem="cv9-k5-gJ1" firstAttribute="centerY" secondItem="Bnl-S3-9Ul" secondAttribute="centerY" id="MKe-hJ-y7K"/>
                             <constraint firstItem="Bnl-S3-9Ul" firstAttribute="centerY" secondItem="OSl-ui-EdT" secondAttribute="centerY" id="Ojp-QN-nAz"/>
+                            <constraint firstItem="DZU-GY-njU" firstAttribute="leading" secondItem="OSl-ui-EdT" secondAttribute="leading" id="S6b-LL-mPI"/>
                             <constraint firstItem="cv9-k5-gJ1" firstAttribute="centerX" secondItem="ec4-Xy-Cc7" secondAttribute="centerX" constant="30" id="SND-4H-i4n"/>
+                            <constraint firstItem="Leo-1U-DRN" firstAttribute="centerY" secondItem="7OS-1Y-PI6" secondAttribute="centerY" id="TcQ-KZ-iq1"/>
+                            <constraint firstItem="Leo-1U-DRN" firstAttribute="leading" secondItem="cv9-k5-gJ1" secondAttribute="leading" id="Tp8-N1-rGy"/>
                             <constraint firstItem="OSl-ui-EdT" firstAttribute="leading" secondItem="Fb2-Jd-e9H" secondAttribute="leading" constant="55" id="Xpt-2r-53I"/>
+                            <constraint firstItem="7OS-1Y-PI6" firstAttribute="centerY" secondItem="DZU-GY-njU" secondAttribute="centerY" id="a4J-2c-1yl"/>
                             <constraint firstItem="Fb2-Jd-e9H" firstAttribute="bottom" secondItem="OSl-ui-EdT" secondAttribute="bottom" constant="48" id="aQh-NU-yxu"/>
                             <constraint firstItem="Fb2-Jd-e9H" firstAttribute="trailing" secondItem="Bnl-S3-9Ul" secondAttribute="trailing" constant="50" id="kPb-tZ-ekH"/>
                         </constraints>
@@ -71,8 +118,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="copy" width="109" height="105"/>
+        <image name="cut" width="110" height="110"/>
         <image name="left" width="44" height="44"/>
         <image name="next" width="131" height="131"/>
+        <image name="paste" width="107" height="109"/>
         <image name="right" width="44" height="44"/>
     </resources>
 </document>

@@ -12,7 +12,23 @@ class KeyboardViewController: UIInputViewController {
 
   //  @IBOutlet var nextKeyboardButton: UIButton!
  //   @IBOutlet var lineFeedButton: UIButton!
-  
+    @IBAction func onCut(_ sender: Any) {
+        UIPasteboard.general.string = textDocumentProxy.selectedText
+        (textDocumentProxy as UIKeyInput).insertText(" ")
+        (textDocumentProxy as UIKeyInput).deleteBackward()
+    }
+    
+    @IBAction func onCopy(_ sender: Any) {
+        UIPasteboard.general.string = textDocumentProxy.selectedText
+    }
+    
+    @IBAction func onPaste(_ sender: Any) {
+        guard let data = UIPasteboard.general.string else {
+            return
+        }
+        (textDocumentProxy as UIKeyInput).insertText(data)
+    }
+    
     @IBAction func onDirectionLeft(_ sender: Any) {
         
         textDocumentProxy.adjustTextPosition(byCharacterOffset: -1)
