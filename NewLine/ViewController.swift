@@ -29,8 +29,8 @@ class ViewController: UIViewController {
     }
 
 
-    @IBAction func onInstallKeyboard(_ sender: Any) {
+   /* @IBAction func onInstallKeyboard(_ sender: Any) {
            UIApplication.shared.open(URL(string:"App-Prefs:root=General&path=Keyboard/KEYBOARDS")!)
-    }
+    }*/
 }
 
